@@ -26,8 +26,7 @@ export const projects: Project[] = [
       "/crossedswords.png",
       "/crossedswords.png",
       "/crossedswords.png",
-      "/crossedswords.png",
-      "/crossedswords.png",
+      
     ],
     technologies: ["Python", " TensorFlow", " Keras", " OpenCV"],
     
@@ -37,17 +36,16 @@ export const projects: Project[] = [
     id: 7,
     name: "Crimson Remorse",
     type: "Games",
-    image: "/menu.png",
+    image: "CrimsonRemorse/menu.png",
     description: "Turn-based strategy game set in medieval times with resource management.",
     cardDescription: "Turn-based medieval strategy with resource and army management.",
     modalDescription: "Design and command your kingdom through seasons, balancing economy, diplomacy, and tactical battles. Built in Unity with custom AI for enemy factions and a modular map system.",
     technologies: ["Unity", "C#", "Blender", "Photoshop"],
     media: [
-      "/coming.png",
-      "/Trailer1.mp4",
-      "/menu.png",
-      "/menu.png",
-      "/menu.png",
+      "CrimsonRemorse/coming.png",
+      "CrimsonRemorse/Trailer1.mp4",
+      "CrimsonRemorse/menu.png",
+    
     ],
   },
   
@@ -61,8 +59,7 @@ export const projects: Project[] = [
     cardDescription: "E-commerce app with Stripe payments and admin dashboard.",
     modalDescription: "A production-ready e-commerce platform: product catalog, cart, checkout with Stripe, order management, and an admin dashboard with role-based access. Includes SSR, image optimization, and SEO.",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    githubUrl: "https://github.com/samym/ecommerce-platform",
-    liveUrl: "https://ecommerce-platform-demo.com"
+    media: []
   },
   {
     id: 14,
@@ -73,8 +70,7 @@ export const projects: Project[] = [
     cardDescription: "Responsive portfolio with elegant dark theme and animations.",
     modalDescription: "A personal portfolio built with modern tooling, focusing on accessibility, performance, and tasteful motion. Implements responsive layouts, lazy-loading, and SEO best practices.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/samym/portfolio-website",
-    liveUrl: "https://portfolio-website-demo.com"
+    media: []
   },
 ];
 
