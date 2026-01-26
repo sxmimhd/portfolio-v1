@@ -224,7 +224,7 @@ export default function Landing({ onEnterClick }: LandingProps) {
           <div className="relative z-10 h-full flex flex-col items-center justify-center space-y-8 md:space-y-12">
           {/* Portfolio title */}
           <div className="text-center space-y-6 md:space-y-8">
-            <h1 className="font-[family-name:var(--font-unifraktur)] font-normal text-4xl md:text-6xl lg:text-7xl tracking-wide text-gold text-balance drop-shadow-glow">
+            <h1 className="font-[family-name:var(--font-cinzel-decorative)] font-bold text-2xl md:text-6xl lg:text-7xl tracking-wide text-gold text-balance drop-shadow-glow">
               <div>sami Mahdadi's</div>
               <div>Portfolio</div>
             </h1>
@@ -251,13 +251,16 @@ export default function Landing({ onEnterClick }: LandingProps) {
           </div>
 
           {/* About section */}
-          <div className="text-center max-w-md md:max-w-lg space-y-4 md:space-y-6 pt-8 md:pt-12">
+          <div className="text-center max-w-md md:max-w-lg space-y-10 md:space-y-10 pt-8 md:pt-16">
             <h2 className="font-[family-name:var(--font-cinzel-decorative)] font-bold text-3xl md:text-4xl lg:text-5xl text-gold tracking-wide">
               About
             </h2>
             <p className="font-[family-name:var(--font-cinzel)] text-sm md:text-base lg:text-lg leading-relaxed text-stone-400 text-balance px-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+            Hi, I’m Sami Mahdadi, an AI-focused developer in my 20s with a passion for creating.
+            <br />
+            I work on AI engineering and machine learning projects, build 2D and 3D games with Unity, and develop full-stack web applications.
+            <br />
+            I enjoy combining problem-solving, creativity, and technology to build meaningful projects.
             </p>
           </div>
         </div>

@@ -228,11 +228,11 @@ export default function MainPage() {
   const getCategoryDescription = (category: string) => {
     switch (category) {
       case 'AI Projects':
-        return 'My AI projects, designed and developed by me.\nCutting-edge ML and AI craftsmanship.';
+        return 'My AI projects,\n Cutting-edge ML and AI craftsmanship.';
       case 'Games':
-        return 'My games, designed and developed by me.\nImmersive gameplay and creative stories.';
+        return 'My games, 2D/3D Unity,\n Immersive gameplay and creative stories.';
       case 'Web Projects':
-        return 'My web projects, designed and developed by me.\nModern, responsive, and performance-focused.';
+        return 'My web projects,\n Modern, responsive, and performance-focused.';
       default:
         return 'Explore my collection of projects. Each project represents a journey of innovation and craftsmanship.';
     }
@@ -293,7 +293,7 @@ export default function MainPage() {
                 
                 {/* Navigation Links */}
                 {/* Desktop Nav */}
-                <div className="hidden md:block">
+                <div className="hidden md:flex">
                   <div className="ml-8 flex items-baseline space-x-3">
                     <button 
                       onClick={() => setActiveTab('AI Projects')}
@@ -340,20 +340,20 @@ export default function MainPage() {
 
       {/* Mobile Nav Drawer */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 md:hidden">
+        <div className="fixed inset-0 z-40 md:hidden flex items-center justify-center">
           <div className="absolute inset-0 bg-black/70 backdrop" onClick={() => setIsMobileMenuOpen(false)} />
-          <div className="absolute top-16 left-0 right-0 mx-4 bg-black/95 rounded-lg border border-gold-dark p-4 shadow-xl">
+          <div className="relative mx-4 bg-black/95 rounded-lg border border-gold-dark p-4 shadow-xl">
             <div className="flex flex-col space-y-3">
               {(['AI Projects','Games','Web Projects'] as const).map(tab => (
                 <button
                   key={tab}
                   onClick={() => { setActiveTab(tab); setIsMobileMenuOpen(false); }}
-                  className={`px-4 py-2 text-sm font-[family-name:var(--font-cinzel)] transition-colors duration-300 border rounded-sm ${activeTab === tab ? 'text-black bg-gold-dark border-gold-dark' : 'text-gold-dark bg-gold-muted hover:text-black border-gold-dark'}`}
+                  className={`w-40 self-center text-center px-4 py-2 text-sm font-[family-name:var(--font-cinzel)] transition-colors duration-300 border rounded-sm ${activeTab === tab ? 'text-black bg-gold-dark border-gold-dark' : 'text-gold-dark bg-gold-muted hover:text-black border-gold-dark'}`}
                 >
                   {tab}
                 </button>
               ))}
-              <button onClick={() => { setIsContactOpen(true); setIsMobileMenuOpen(false); }} className="text-gold-dark bg-gold-muted hover:text-black px-4 py-2 text-sm font-[family-name:var(--font-cinzel)] transition-colors duration-300 border border-gold-dark rounded-sm">
+              <button onClick={() => { setIsContactOpen(true); setIsMobileMenuOpen(false); }} className="w-40 self-center text-center text-gold-dark bg-gold-muted hover:text-black px-4 py-2 text-sm font-[family-name:var(--font-cinzel)] transition-colors duration-300 border border-gold-dark rounded-sm">
                 Contact
               </button>
             </div>
@@ -409,7 +409,7 @@ export default function MainPage() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-unifraktur)] text-3xl md:text-4xl lg:text-5xl text-gold mb-4">
+            <h2 className="font-[family-name:var(--font-cinzel-decorative)] text-3xl md:text-4xl lg:text-5xl text-gold mb-4">
               {activeTab}
             </h2>
             <p className="font-[family-name:var(--font-cinzel)] text-lg text-stone-400 max-w-2xl mx-auto whitespace-pre-line text-center">
@@ -456,23 +456,20 @@ export default function MainPage() {
             {/* Close */}
             <button type="button" className="absolute top-2 right-2 z-50 text-black bg-gold-dark hover:bg-[#c4a56f] hover:text-black text-2xl leading-none px-3 py-1 rounded-sm border border-gold-dark" onClick={() => setIsContactOpen(false)} aria-label="Close">×</button>
             <div className="p-6 space-y-4">
-              <h3 className="font-[family-name:var(--font-unifraktur)] text-gold-dark text-2xl">Contact</h3>
+              <h3 className="font-[family-name:var(--font-cinzel-decorative)] text-gold-dark text-2xl">Contact</h3>
               <div className="font-[family-name:var(--font-cinzel)] text-gold-dark space-y-3">
                 <div>
                   <span className="opacity-80 text-stone-300">Gmail: </span>
-                  <a href="mailto:samym@gmail.com" className="text-stone-300 hover:text-[#c4a56f]">samym@gmail.com</a>
+                  <a href="mailto:samym@gmail.com" className="text-stone-300 hover:text-[#c4a56f]">samymahdadi@gmail.com</a>
                 </div>
-                <div>
-                  <span className="opacity-80 text-stone-300">Phone: </span>
-                  <a href="tel:+1234567890" className="text-stone-300 hover:text-[#c4a56f]">+1 234 567 890</a>
-                </div>
+                
                 <div>
                   <span className="opacity-80 text-stone-300">GitHub: </span>
-                  <a href="https://github.com/samym" target="_blank" rel="noreferrer" className="text-stone-300 hover:text-[#c4a56f]">github.com/samym</a>
+                  <a href="https://github.com/mahdadisami" target="_blank" rel="noreferrer" className="text-stone-300 hover:text-[#c4a56f]">github.com/mahdadisami</a>
                 </div>
                 <div>
                   <span className="opacity-80 text-stone-300">LinkedIn: </span>
-                  <a href="https://www.linkedin.com/in/samym" target="_blank" rel="noreferrer" className="text-stone-300 hover:text-[#c4a56f]">linkedin.com/in/samym</a>
+                  <a href="https://www.linkedin.com/in/samimahdadi/" target="_blank" rel="noreferrer" className="text-stone-300 hover:text-[#c4a56f]">linkedin.com/in/samimahdadi</a>
                 </div>
               </div>
             </div>
