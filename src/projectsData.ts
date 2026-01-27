@@ -45,6 +45,7 @@ export const projects: Project[] = [
       "CrimsonRemorse/coming.png",
       "CrimsonRemorse/Trailer1.mp4",
       "CrimsonRemorse/menu.png",
+      "CrimsonRemorse/menu.png",
     
     ],
   },
@@ -52,7 +53,7 @@ export const projects: Project[] = [
   // Web Projects
   {
     id: 13,
-    name: "E-commerce Platform",
+    name: "Revive 2000",
     type: "Web Projects",
     image: "/crossedswords.png",
     description: "Full-stack e-commerce solution with payment integration and admin dashboard.",
@@ -65,12 +66,12 @@ export const projects: Project[] = [
     id: 14,
     name: "Portfolio Website",
     type: "Web Projects",
-    image: "/crossedswords.png",
+    image: "portfolio/p1.png",
     description: "Modern, responsive portfolio website with smooth animations and dark theme.",
     cardDescription: "Responsive portfolio with elegant dark theme and animations.",
     modalDescription: "A personal portfolio built with modern tooling, focusing on accessibility, performance, and tasteful motion. Implements responsive layouts, lazy-loading, and SEO best practices.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    media: []
+    media: ["portfolio/p1.png", "portfolio/p2.png", "portfolio/p3.png", "portfolio/p4.png", "portfolio/p5.png"]
   },
 ];
 

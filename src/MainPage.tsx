@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from "./components/ui/button"
 import ProjectCard from "./components/ProjectCard"
 import ProjectModal from "./components/ProjectModal"
 import { getProjectsByType, Project } from "./projectsData"
@@ -140,6 +139,7 @@ function SideBorderDecoration({ className }: { className?: string }) {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function CrossedSwords({ className }: { className?: string }) {
   return (
     <svg className={className} width="200" height="200" viewBox="0 0 200 200" fill="none">
