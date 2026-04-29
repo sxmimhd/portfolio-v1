@@ -23,9 +23,7 @@ export const projects: Project[] = [
     cardDescription: "Image classifier built with TensorFlow and Python. High accuracy on benchmark datasets.",
     modalDescription: "This project implements a convolutional neural network for image classification using TensorFlow and Keras. It includes data augmentation, transfer learning, training/validation pipelines, and evaluation with confusion matrices and ROC curves. The model is packaged with a minimal API for inference.",
     media: [
-      "/crossedswords.png",
-      "/crossedswords.png",
-      "/crossedswords.png",
+      ""
       
     ],
     technologies: ["Python", " TensorFlow", " Keras", " OpenCV"],
@@ -43,25 +41,15 @@ export const projects: Project[] = [
     technologies: ["Unity", "C#", "Blender", "Photoshop"],
     media: [
       "CrimsonRemorse/coming.png",
-      "CrimsonRemorse/Trailer1.mp4",
+      
       "CrimsonRemorse/menu.png",
-      "CrimsonRemorse/menu.png",
+      
     
     ],
   },
   
   // Web Projects
-  {
-    id: 13,
-    name: "Revive 2000",
-    type: "Web Projects",
-    image: "/crossedswords.png",
-    description: "Full-stack e-commerce solution with payment integration and admin dashboard.",
-    cardDescription: "E-commerce app with Stripe payments and admin dashboard.",
-    modalDescription: "A production-ready e-commerce platform: product catalog, cart, checkout with Stripe, order management, and an admin dashboard with role-based access. Includes SSR, image optimization, and SEO.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    media: []
-  },
+  
   {
     id: 14,
     name: "Portfolio Website",
